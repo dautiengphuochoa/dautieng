@@ -1,0 +1,9 @@
+.my-table {
+    width:  100%;
+    border: 1px solid blue;
+}
+
+.my-th {
+    color: blue;
+    font-size: 24px;
+}
