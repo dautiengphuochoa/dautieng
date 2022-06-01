@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Dầu Tiếng</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="css/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="css/apex-charts.css" />
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="js/helpers.js"></script>
+    <script src="js/config.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/demo.css">
+
+</head>
+
+<body>
+    
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+          <!-- Menu -->
+            <!-- / Navbar -->
+  
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+              <!-- Content -->
+  
+              <div class="container-xxl flex-grow-1 container-p-y">
+                <div class="row">
+                  <div class="col-lg-8 mb-4 order-0">
+                    <div class="card ">
+                        <h2 class=" text-center mt-2">THÔNG TIN VẬN HÀNH HỒ DẦU TIẾNG</h2>
+                        <h5 class="card-title text-center text-primary">THỜI GIAN 🕐</h5>
+
+                            <p class="mb-1 text-center ">
+                               <span class="fw-bold">Giờ: </span> <span id="giohientai"></span>
+                            </p>
+                            <script>
+                              var today = new Date();
+                              var time = today.getHours() + " : " + today.getMinutes() + " : " + today.getSeconds();
+                              document.getElementById("giohientai").innerHTML = time;
+                             </script>
+
+                            <p class="text-center">
+                                <span class="fw-bold mb-2">Ngày: </span> <span id="ngayhientai"></span>
+                            </p>
+                            <script>
+                              var today = new Date();
+                              var date = today.getDate()+' / '+(today.getMonth()+1)+' / '+today.getFullYear();
+                              document.getElementById("ngayhientai").innerHTML = date;
+                           </script>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 order-1">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12 col-6 mb-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <span class="fw-semibold d-block mb-1">MỰC NƯỚC HỒ</span>
+                            <h3 class="card-title mb-2"><span id="wrapper-GiaTri"></h3>
+                            <p>Dự báo trong 72 giờ: </p><span class="text-success fw-semibold"> 21.3 m</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-6 mb-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <span class="fw-semibold d-block mb-1">DUNG TÍCH HỒ</span>
+                            <h3 class="card-title text-nowrap mb-1">897.40 (tr.m³)</h3>
+                            <p>Dự báo trong 72 giờ: </p><span class="text-success fw-semibold"> 943.62 (tr.m³)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- BẢN ĐỒ -->
+                  <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                    <div class="card">
+                      <div class="row row-bordered g-0">
+                          <h5 class="card-header m-0 me-2 pb-3">BẢN ĐỒ</h5>
+                          <iframe src="https://www.google.com/maps/d/embed?mid=1USsOHfD9hPqzCNSyFpwlpf3bDme3p5M&ehbc=2E312F" width="640" height="480"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ BẢN ĐỒ -->
+
+                  <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                    <div class="row">
+                      <div class="col-6 mb-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="card-title d-flex align-items-start justify-content-between">
+                            </div>
+                            <span class="fw-semibold d-block mb-1">DÒNG CHẢY ĐẾN</span>
+                            <h3 class="card-title text-nowrap mb-2">214.28 m³/s</h3>
+                            <p>Dự báo trong 72 giờ: </p><span class="text-success fw-semibold"> 247.73 m³/s</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="card-title d-flex align-items-start justify-content-between">
+                              
+                            
+                            </div>
+                            <span class="fw-semibold d-block mb-1">LƯỢNG MƯA</span>
+                            <h3 class="card-title text-nowrap mb-2">0 mm</h3>
+                            <p>Trung bình 3 ngày: </p><span class="text-success fw-semibold">3.23 mm</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- </div>
+      <div class="row"> -->
+                      <div class="col-12 mb-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                              <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                                <div class="card-title">
+                                  <h5 class="text-nowrap mb-2">TRẠM QUAN TRẮC</h5>
+                                  <span class="badge bg-label-danger rounded-pill mt-2">KÊNH DẪN PHƯỚC HÒA</span>
+                                  <p>Lưu lượng: 30 m³/s</p>
+                                  <p>Mực nước: ... m </p>
+                                  <span class="badge bg-label-danger rounded-pill mt-3 mb-3">PHƯỚC ĐÔNG - BỜI LỜI</span>
+                                  <p>Lưu lượng: 30 m³/s </p>
+                                  <p>Mực nước: ... m </p>  
+                                </div>
+                              </div>
+                              <div id="profileReportChart"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- CÁC CÔNG TRÌNH -->
+                  <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
+                    <div class="card h-100">
+                      <div class="card-header d-flex align-items-center justify-content-between pb-0">
+                        <div class="card-title mb-2">
+                          <h5 class="m-0 me-2 ">CÁC CÔNG TRÌNH</h5>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <ul class="p-0 m-0">
+                          <li class="d-flex mb-4 pb-1">           
+                            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                              <div class="me-2">
+                                <small class="text-muted d-block mt-2 mb-1">KÊNH ĐÔNG</small>
+                                <h6 class="mb-0">Cống số 1</h6>
+                                <h6 class="mb-0">K8</h6>
+                                <h6 class="mb-0">K13</h6>
+                                <h6 class="mb-0">Cống điều tiết </h6>
+                                <h6 class="mb-0">K27</h6>
+                                <h6 class="mb-0">K30</h6>
+                                <h6 class="mb-0">Cống điều tiết K34+333</h6>
+                                <h6 class="mb-0">Cống tưới kênh N25</h6>
+                              </div>
+                              <div class="user-progress d-flex align-items-center gap-1">
+                                <h6 class="mb-0">16.73 m</h6>
+                              </div>                             
+                            </div>
+                          </li>
+                          
+                          <li class="d-flex mb-4 pb-1">
+                            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                              <div class="me-2">
+                                <small class="text-muted d-block mb-1">KÊNH TÂY</small>
+                                <h6 class="mb-0">Cống số 2</h6>
+                                <h6 class="mb-0">K1+500</h6>
+                                <h6 class="mb-0">K13</h6>
+                                <h6 class="mb-0">K21</h6>
+                                <h6 class="mb-0">K25</h6>
+                                <h6 class="mb-0">K32</h6>
+                                <h6 class="mb-0">K39</h6>
+                              </div>
+                              <div class="user-progress d-flex align-items-center gap-1">
+                                <h6 class="mb-0">16.49 m</h6>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ CÁC CÔNG TRÌNH -->
+  
+                  <!-- BIỂU ĐỒ -->
+                  <div class="col-md-6 col-lg-4 order-1 mb-4">
+                    <div class="card h-100">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="card-title m-0 me-2">BIỂU ĐỒ</h5>
+                      </div>
+                      <div class="card-body px-0">
+                        <div class="tab-content p-0">
+                          <div class="tab-pane fade show active" id="navs-tabs-line-card-income" role="tabpanel">
+                            <div class="d-flex p-4 pt-3">
+                              <div>
+                                <small class="text-muted d-block">Biểu đồ diễn biến mực nước hồ trong 7 ngày</small>
+                              </div>
+                            </div>
+                            <div id="incomeChart"></div>
+                            <div class="d-flex justify-content-center pt-4 gap-2">
+                              <!-- <div class="flex-shrink-0">
+                                <div id="expensesOfWeek"></div>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ BIỂU ĐỒ -->
+  
+                  <!-- KẾ HOẠCH ĐIỀU TIẾT -->
+                  <div class="col-md-6 col-lg-4 order-2 mb-4">
+                    <div class="card h-100">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="card-title m-0 me-2">KẾ HOẠCH ĐIỀU TIẾT</h5>
+                      </div>
+                      <div class="card-body">
+                        <ul class="p-0 m-0">
+                          <li class="d-flex mb-4 pb-1">           
+                            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                              <div class="me-2">
+                                <small class="text-muted d-block mt-2 mb-1">KÊNH ĐÔNG</small>
+                                <h6 class="mb-0">Cống số 1</h6>
+                                <h6 class="mb-0">K8</h6>
+                                <h6 class="mb-0">K13</h6>
+                                <h6 class="mb-0">Cống điều tiết </h6>
+                                <h6 class="mb-0">K27</h6>
+                                <h6 class="mb-0">K30</h6>
+                                <h6 class="mb-0">Cống điều tiết K34+333</h6>
+                                <h6 class="mb-0">Cống tưới kênh N25</h6>
+                              </div>
+                              <div class="user-progress d-flex align-items-center gap-1">
+                                <h6 class="mb-0">16.73 m</h6>
+                              </div>                             
+                            </div>
+                          </li>
+                          
+                          <li class="d-flex mb-4 pb-1">
+                            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                              <div class="me-2">
+                                <small class="text-muted d-block mb-1">KÊNH TÂY</small>
+                                <h6 class="mb-0">Cống số 2</h6>
+                                <h6 class="mb-0">K1+500</h6>
+                                <h6 class="mb-0">K13</h6>
+                                <h6 class="mb-0">K21</h6>
+                                <h6 class="mb-0">K25</h6>
+                                <h6 class="mb-0">K32</h6>
+                                <h6 class="mb-0">K39</h6>
+                              </div>
+                              <div class="user-progress d-flex align-items-center gap-1">
+                                <h6 class="mb-0">16.49 m</h6>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ KẾ HOẠCH ĐIỀU TIẾT -->
+                </div>
+              </div>
+              <!-- / Content -->
+  
+              <!-- Footer -->
+              <!-- <footer class="content-footer footer bg-footer-theme">
+                <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                  <div class="mb-2 mb-md-0">
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    , made by
+                    <a href="#">Công Ty TNHH MTV Khai Thác Thủy Lợi Dầu Tiếng - Phước Hòa</a>
+                  </div>
+                </div>
+              </footer> -->
+              <!-- / Footer -->
+  
+              <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+          </div>
+          <!-- / Layout page -->
+        </div>
+  
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+      </div>
+      <!-- / Layout wrapper -->
+      <div class="chu-thich">
+        <a href="#" class="btn btn-primary btn-chu-thich">Chú thích</a>
+      </div>
+  
+      <!-- Core JS -->
+      <!-- build:js -->
+      <script src="js/jquery.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/perfect-scrollbar.js"></script>
+      <!-- endbuild -->
+  
+      <!-- Vendors JS -->
+      <script src="js/apexcharts.js"></script>
+  
+      <!-- Main JS -->
+      <script src="js/main.js"></script>
+  
+      <!-- Page JS -->
+      <script src="js/dashboards-analytics.js"></script>
+  
+      <!-- Place this tag in your head or just before your close body tag. -->
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+<!--Script Muc Nuoc-->
+<script src="Test-API/wwwroot/jquery-3.6.0.min.js"></script>
+<script>
+  let Dulieumucnuoc = {
+    apiKey: "7001",
+    fetchDulieumucnuoc: function () {
+      fetch(
+        "https://apiv2.thuyloivietnam.vn/Api/getSoLieuQuanTrac?Key=apiktdlqtDauTieng&MaQuanTrac=" + this.apiKey
+      )
+        .then((response) => {
+          if (!response.ok) {
+            alert("API connection failed");
+            throw new Error("API connection failed");
+          }
+          return response.json();
+        })
+        .then((data) => this.displayDulieumucnuoc(data));
+    },
+    displayDulieumucnuoc: function (data) {
+      const dataLength = data.length;
+      const GiaTri = data[dataLength - 1].GiaTri;
+      document.getElementById("wrapper-GiaTri").innerHTML = GiaTri + "m";
+    }
+
+  }
+</script>
+
+<script>
+  $(document).ready(function () {
+    Dulieumucnuoc.fetchDulieumucnuoc();
+  });
+</script>
+<!--End Script Muc Nuoc-->
+
+</body>
+</html>
